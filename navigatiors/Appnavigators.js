@@ -14,6 +14,8 @@ import Page2 from '../page/Page2';
 import Page3 from '../page/Page3';
 import Page4 from '../page/Page4';
 import Page5 from '../page/Page5';
+import FlatListDemo from '../page/FlatListDemo';
+import SwipeableFlatListDemo from '../page/SwipeableFlatListDemo';
 import Login from '../page/Login';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
@@ -178,6 +180,12 @@ const DrawerNav = createDrawerNavigator({
 const AppStack = createStackNavigator({
   Page1: {
     screen: Page1
+  },
+  FlatListDemo: {
+    screen: FlatListDemo
+  },
+  SwipeableFlatListDemo: {
+    screen: SwipeableFlatListDemo,
   },
 });
 

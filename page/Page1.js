@@ -8,7 +8,7 @@
  */
 
 import React, {Component} from 'react';
-import {Button, StyleSheet, Text, View} from 'react-native';
+import {Button, StyleSheet, Text, View, FlatList} from 'react-native';
 
 type Props = {};
 export default class Page1 extends Component<Props> {
@@ -28,6 +28,18 @@ export default class Page1 extends Component<Props> {
           title={'Go page4'}
           onPress={() => {
             navigation.navigate('Page4');
+          }}
+        />
+        <Button
+          title={'Go FlatListDemo'}
+          onPress={() => {
+            navigation.navigate('FlatListDemo');
+          }}
+        />
+        <Button
+          title={'Go SwipeableFlatListDemo'}
+          onPress={() => {
+            navigation.navigate('SwipeableFlatListDemo');
           }}
         />
       </View>
